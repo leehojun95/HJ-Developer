@@ -1,0 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%!
+    	//선언문, 필드와 메서드만 작성가능
+    	//
+    	
+    	String name ="이순신";
+    	public 
+    %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>표현식</title>
+</head>
+<body>
+	<h3>jsp파일에 자바코드 삽입하는 방법3 - 표현식</h3>
+</body>
+</html>

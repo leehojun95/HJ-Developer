@@ -1,0 +1,23 @@
+package chapter15.lambda;
+
+//인터페이스를 이용한 구현클래스
+class Test implements MyNumber{
+	
+	@Override
+	public int getMax(int num1, int num2) {
+		
+		if(num1 > num2) {
+			return num1;
+		}else {
+			return num2;
+		}
+	} 
+}
+public class TestMyNumber {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

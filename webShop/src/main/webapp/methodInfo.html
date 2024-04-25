@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	function loc() {
+		location.href = "http://localhost:9090/webShop/First"; // 서블릿 주소
+	}
+</script>
+</head>
+<body>
+<h3>get요청방식 구문</h3>
+<form action="http://localhost:9090/webShop/First" method="get">
+	<input type="submit" value="get전송">
+</form>
+<br>
+<a href="http://localhost:9090/First">클릭1</a><br>
+<a href="http://localhost:9090/input3?u_name=손흥민&u_id=user01&u_pw=1234&u_addr=서울시 노원구 이젠빌딩&u_tel=010-5555-5555&u_age=100">클릭2</a>
+<br>
+<input type="button" value="클릭" onclick="loc()">
+
+<h3>post요청방식 구문</h3>
+<form action="http://localhost:9090/webShop/First" method="post">
+	<input type="submit" value="post전송">
+</form>
+</body>
+</html>

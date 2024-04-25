@@ -1,0 +1,30 @@
+<%@page import="java.util.List"%>
+<%@page import="sec07.MemberDAO"%>
+<%@page import="sec07.MemberVO"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>회원정보 출력</h1>
+<%
+	MemberDAO dao = new MemberDAO();
+	List<MemberVO> memberList =dao.listMembers();
+%>
+
+<table>
+	<tr>
+		<td>아이디</td><td>비밀번호</td><td>이름</td><td>이메일</td><td>가입일자</td>
+	</tr>
+	<%
+		for(int i=0; i<memberList.size(); i++){
+			memberList.get(i);
+		}
+	%>
+</table>
+</body>
+</html>

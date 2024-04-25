@@ -1,0 +1,12 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>스크립트 릿</title>
+</head>
+<body>
+	<h3>jsp파일에 자바코드 삽입하는 방법1 - 스크립트 릿</h3>
+</body>
+</html>

@@ -1,0 +1,29 @@
+package sec08.ex01;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+@WebServlet("/Sec08Ex01FristServlet")
+public class Sec08Ex01FristServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    
+    public Sec08Ex01FristServlet() {
+        super();
+        
+    }
+
+	
+    // get 요청시 동작
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		//서버에서 클라이언트로 보내는 데이터에 대한 처리를 MIME-TYPE정보와 인코딩방식으로 하라.
+		response.setContentType("text/html;charset=utf-8");
+	}
+
+}

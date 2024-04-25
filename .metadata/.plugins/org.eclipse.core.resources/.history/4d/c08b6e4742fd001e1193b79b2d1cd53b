@@ -1,0 +1,46 @@
+package sec07;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+// 데이터베이스 연동기능(연결하고 동작(SQL문 실행))
+// JDK안에 JDBC기능 라이브러리.
+public class MemberDAO {
+
+	
+	private Connection conn; // 데이터베이스 연결목적
+	private PreparedStatement pstmt; // 연결상태에서 SQL문 실행목적
+	private ResultSet rs; // SQL문 Select문 실행시 출력되는 결과를 저장하는 목적.
+	
+	private String url = "오라클서버 호스트이름";
+	private String uid = "계정";
+	private String pw = "비밀번호";
+	
+	public MemberDAO() {
+		
+	}
+	
+	public void getConnection() throws SQLException {
+		if(conn == null || conn.isClosed()) {
+			try {
+				Class.forName("oracle.jdbc.OracleDriver");
+			} catch (ClassNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			conn = DriverManager.getConnection(url, uid, pw);
+		}
+		
+		return conn;
+	}
+	
+	//회원가입(insert)
+	
+	//회원삭제(delete)
+	
+	//회원목록(select)
+}

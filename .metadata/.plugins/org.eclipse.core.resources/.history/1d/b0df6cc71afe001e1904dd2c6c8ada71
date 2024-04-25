@@ -1,0 +1,34 @@
+package member;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+public class MemberDAO {
+
+	private Connection conn;
+	private PreparedStatement ppst;
+	
+	private String url = "jdbc:oracle:thin:@localhost:1521:xe";
+	private String uid = "jspuser";
+	private String pw = "jspuser";
+	
+	public MemberDAO() {
+		
+	}
+	
+	public Connection getConnection() throws SQLException{
+		if(conn == null || conn.isClosed()) {
+			try {
+				Class.forName("oracle.jdbc.OracleDriver");
+			} catch(ClassNotFoundException e) {
+				
+			}
+			
+			conn = DriverManager.getConnection(url, uid, pw);
+		}
+		return conn;
+		
+	}
+}
