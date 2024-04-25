@@ -1,0 +1,22 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%
+    	request.setCharacterEncoding("utf-8");
+    
+    	// 요청이 종료되면, 소멸
+    	request.setAttribute("id", "hong");
+    	request.setAttribute("pwd", "1234");
+    	// 세션이 종료되면, 소멸
+    	session.setAttribute("name", "홍길동");
+    	
+    %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+</body>
+</html>

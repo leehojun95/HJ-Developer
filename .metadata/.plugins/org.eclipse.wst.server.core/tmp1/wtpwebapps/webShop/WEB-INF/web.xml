@@ -4,16 +4,15 @@
   <welcome-file-list>
     <welcome-file>/sec12/test02/main.jsp</welcome-file>
   </welcome-file-list>
-  
+	
+	
   <error-page>
   	<error-code>404</error-code>
   	<location>/sec12/err/error_404.jsp</location>
   </error-page>
   
-    <error-page>
+  <error-page>
   	<error-code>500</error-code>
   	<location>/sec12/err/error_500.jsp</location>
   </error-page>
-  
- 
 </web-app>

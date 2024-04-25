@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+    <%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+    <%
+    	request.setCharacterEncoding("utf-8");
+    %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h3>여러가지 문자열 함수가능</h3>
+<c:set var="title" value="hello world" />
+<c:set var="title2" value="쇼핑몰 중심 jsp입니다." />
+<c:set var="tstr1" value="중심" />
+</body>
+</html>

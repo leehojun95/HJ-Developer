@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	상대경로 : <img src="../image/duke.png" /><br>
-	절대경로 : <img src="/image/duke.png" />
+	<b>상대경로:</b> <img src="../image/duke.png" /><br>
+	<b>절대경로:</b> <img src="/image/duke.png" />
 </body>
 </html>

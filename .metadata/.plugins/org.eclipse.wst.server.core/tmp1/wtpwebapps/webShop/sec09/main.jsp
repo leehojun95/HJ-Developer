@@ -8,11 +8,11 @@
 </head>
 <body>
 <h3>메인 홈페이지입니다.</h3>
-<%if(session.getAttribute("auth") == null) {%>
+<%if(session.getAttribute("auth") == null)  {%>
 <a href="/sec09/login.jsp">로그인</a><br>
 
 
-<%}else {%>
+<%} else {%>
 <a href="/sec09/logout.jsp">로그아웃</a><br>
 <%} %>
 </body>
